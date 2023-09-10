@@ -1,0 +1,32 @@
+.rainbow_text_animated_ozura {
+    background: linear-gradient(
+            to right,
+            #ff7200,
+            #ff049e,
+            #1794fc
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow 3s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+.gradient_ready {
+    background: linear-gradient(
+            124deg,
+            #069887,
+            #f14513,
+            #008ef3,
+            #5500ff,
+            #1d20e8,
+            #7841b2,
+            #8750f5
+    );
+    background-size: 1800% 1800%;
+
+    -webkit-animation: rainbow 12s ease infinite;
+    -z-animation: rainbow 12s ease infinite;
+    -o-animation: rainbow 12s ease infinite;
+    animation: rainbow 12s ease infinite;
+}

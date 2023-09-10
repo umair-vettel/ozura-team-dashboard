@@ -1,0 +1,143 @@
+@import url("https://fonts.cdnfonts.com/css/montserrat");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "britanica";
+  src: url("/fonts/britanica-black.ttf");
+}
+@font-face {
+  font-family: "organetto-bold";
+  src: url("/fonts/Organetto-UltraBoldExp.ttf");
+}
+
+@font-face {
+  font-family: "organetto";
+  src: url("/fonts/Organetto-UltraBoldSemiExp.ttf");
+}
+@font-face {
+  font-family: "tangerine";
+  src: url("/fonts/TangerineRegular.ttf");
+}
+
+@font-face {
+  font-family: "sfPro";
+  src: url("/fonts/sfProRegular.otf");
+}
+
+@font-face {
+  font-family: "helveticaNeue";
+  src: url("/fonts/HelveticaNeue_Medium.ttf");
+}
+@font-face {
+  font-family: "publicSansSemi";
+  src: url("/fonts/PublicSans-SemiBold.ttf");
+}
+@font-face {
+  font-family: "publicSansMed";
+  src: url("/fonts/PublicSans-Medium.ttf");
+}
+
+.animated-gradient {
+  background: linear-gradient(216deg, #4d097a, #151792cb);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 24s ease infinite;
+  -moz-animation: AnimationName 24s ease infinite;
+  animation: AnimationName 24s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 94%}
+  50%{background-position:100% 7%}
+  100%{background-position:0% 94%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 94%}
+  50%{background-position:100% 7%}
+  100%{background-position:0% 94%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 94%}
+  50%{background-position:100% 7%}
+  100%{background-position:0% 94%}
+}
+
+body {
+  overscroll-behavior: none;
+  font-family: "Montserrat";
+}
+
+/* Had to add this to override normal modal z index */
+.web3modal-modal-lightbox {
+  z-index: 50 !important;
+}
+
+.rainbow_text_animated_ozura {
+  background: linear-gradient(
+          to right,
+          #ff7200,
+          #ff049e,
+          #1794fc
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow 6s ease-in-out infinite;
+}
+
+.borderGrad{
+  position: relative;
+  background: #3c344f !important;
+}
+.borderGrad::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 0.75rem; 
+  padding: 3px; 
+  background: transparent;
+  -webkit-mask: 
+  linear-gradient(#fff 0 0) content-box, 
+  linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude; 
+}
+
+
+.borderGrad:hover::before{
+  background:linear-gradient(45deg,#436ba2,#573e91, #9e325f, #252031); 
+}
+
+.body {
+  background-color: #252031;
+  min-height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+      stop-color: orange;
+     50% {
+      stop-color: blue;
+  }
+  100% {
+      stop-color: pink;
+  }
+}
+
+.stop1 {
+  animation: gradient 5s ease-in-out infinite;
+}
+
+.stop2 {
+  animation: gradient 5s ease-in-out infinite;
+  animation-delay: 1.67s; /* delay by one-third of animation duration */
+}
+
+.stop3 {
+  animation: gradient 5s ease-in-out infinite;
+  animation-delay: 3.33s; /* delay by two-thirds of animation duration */
+};
+};
